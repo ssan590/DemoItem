@@ -25,8 +25,8 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation group: 'com.mysql', name: 'mysql-connector-j', version: '8.2.0'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-	runtimeOnly("com.mysql:mysql-connector-j")
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'

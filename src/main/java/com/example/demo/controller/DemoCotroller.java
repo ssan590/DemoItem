@@ -30,7 +30,7 @@ public class DemoCotroller {
 
     // 수정
     @PutMapping("/{id}")
-    public Boolean modifyPost(@PathVariable long id, DemoDto.addParam param) throws Exception {
+    public Boolean modifyPost(@PathVariable long id, @RequestBody DemoDto.addParam param) throws Exception {
         return demoService.modifyPost(id, param);
     }
 
