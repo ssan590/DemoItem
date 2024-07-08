@@ -13,8 +13,4 @@ public class DemoDto {
         private String content;
         private int price;
     }
-
-    public static class checkSuccess {
-        private boolean isSuccess;
-    }
 }
